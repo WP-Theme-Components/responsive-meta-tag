@@ -6,6 +6,7 @@
  * @subpackage responsive-meta-tag
  * @author Cameron Jones
  * @version 1.0.0
+ * @link https://github.com/WP-Theme-Components/responsive-meta-tag
  */
 
 namespace WP_Theme_Components\Responsive_Meta_Tag;
@@ -30,4 +31,4 @@ function add_responsive_meta_tag() {
 	<?php
 }
 
-add_action( 'wp_head', __NAMESPACE__ . '\\add_responsive_meta_tag' );
+add_action( 'wp_head', __NAMESPACE__ . '\\add_responsive_meta_tag', -10 );
